@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz-game</title>
+  <link rel="stylesheet" href="../game-page/game.css">
+  <link rel="shortcut icon" href="../start-page/assets/svg/2901642.svg" type="image/x-icon">
+</head>
+<body>
+  <header class="header">
+      <div class="header__wrapper">
+        <a href="../start-page/index.html" class="header__link"><h1 class="header__logo"> Who is?</h1></a>
+          <nav class="nav">
+            <li class="nav__item"><a href="../game-page/game.html" class="nav__link">Lets play!</a></li>
+            <li class="nav__item"><a href="../start-page/index.html" class="nav__link">Main</a></li>
+              <li class="nav__item"><a href="../result-page/result.html" class="nav__link">Results</a></li>
+          </nav>
+      </div>
+  </header>   
+  <main class="main">
+    <section class="theme">
+      <ul class="theme__list">
+        <li class="theme__item"><button class="theme__button">Brawl Stars</button></li>
+        <li class="theme__item"><button class="theme__button">Warcraft 3</button></li>
+        <li class="theme__item"><button class="theme__button">Naruto</button></li>
+      </ul>
+    </section>
+    <section class="gameplay">
+      <div class="gameplay__wrapper">
+        <div class="gameplay__question">
+          <div class="gameplay__photo">
+            <img src="./assets/img/feat22-1024x576.png" alt="question" class="gameplay__hid-pic">
+          </div>
+          <div class="gameplay__player">
+            <h2 class="gameplay__tittle">Listen the voice of character</h2>
+            <div class="gameplay__text">
+              <p class="gameplay__tittle">Your score: </p>
+              <p class="gameplay__tittle gameplay_score">0</p>
+            </div>      
+            <p class="gameplay__answer">XXXXXX</p>
+            <div class="gameplay__audioplayer">
+              <audio src="./assets/audio/bs/Belle1.mp3" class="gameplay__audio"></audio>
+              <div class="gameplay__volume">
+                <img src="./assets/img/volume.png" alt="volume img" class="vol_pic">
+                <input class = "volume" type="range" min="0" max="100" value="90">
+              </div>
+              <div class="progress_cont">
+                <input class = "progress" type="range" min="0" max="100" value="0">
+              </div>  
+              <div class="box">
+                <div class="box__beats"></div>
+              </div>
+              <div class="play">
+                <div class="btn play__btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gameplay__test">
+          <div class="gameplay__form">
+            <button class="gameplay__label">Char1</button>
+            <button class="gameplay__label">Char2</button>
+            <button class="gameplay__label">Char4</button>
+            <button class="gameplay__label">Char5</button>
+            <button class="gameplay__label">Char6</button>
+            <button class="gameplay__label">Char3</button>
+          </div>
+          <div class="gameplay__variant-info">
+            <div class="gameplay__infoblock">
+              <div class="gameplay__photo-variant">
+                <img src="./assets/img/feat22-1024x576.png" alt="character" class="gameplay__infopic">
+              </div>
+            </div>
+            <div class="gameplay__infotext">
+              <p class="gameplay__infotittle"></p>
+              <p class="gameplay__character"></p>
+            </div>          
+          </div>
+          <button disabled class="next_button">Next level -></button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer class="footer">
+      <div class="footer__wrapper">
+          <div class="logo-pos">
+              <p class="footer__link"><a href="https://github.com/qoolebyaqa" class="footer__link">2022 Qoolebyaqa</a></p>
+              <p class="footer_link"><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt=RSSCHOOL class="course-logo"></a></p>
+          </div>            
+      </div>
+  </footer>
+  <div class="popup__body">
+    <div class="popup__wrapper">
+      <div class="popup_container">
+        <form action="" class="popup__form">
+          <label class="popup__label">You won! We will remember you!</label>
+          <input type="text" class="popup__input" placeholder="Insert your name">
+          <a href="../result-page/result.html" class="nav__link"><input type="button" class="popup__btn" value="Done"></a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="../game-page/game.js"></script>
+</body>
+</html>

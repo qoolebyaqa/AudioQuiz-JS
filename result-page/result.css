@@ -1,0 +1,136 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #ddddd5;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background: black;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 100px;
+}
+
+.header__logo {
+  background-image: url(../start-page/assets/svg/2901642.svg);
+  background-size: 80%;
+  background-position-y: 75%;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 90px;
+  font-size: 20px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: tb-rl;
+}
+.header__logo .header__link {
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav .nav__item {
+  list-style-type: none;
+  margin-right: 50px;
+}
+.nav .nav__link {
+  color: white;
+  font-size: 24px;
+  vertical-align: middle;
+}
+.nav .nav__link:hover {
+  color: #e3c515;
+}
+
+.results__title {
+  font-size: 32px;
+  color: black;
+  text-align: center;
+}
+
+.results__row {
+  display: flex;
+  justify-content: space-around;
+}
+.results__row .results__name, .results__row .results__score, .results__row .results__mode {
+  font-size: 20px;
+  color: black;
+  width: 30%;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.logo-pos {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1600px;
+  justify-content: space-between;
+}
+
+.footer__link {
+  font-size: 24px;
+  color: black;
+}
+
+.course-logo {
+  width: 150px;
+  height: 50px;
+}
+
+.results__wrapper {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.play__again {
+  width: 300px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  height: 30px;
+}
+
+.play__again:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 480px) {
+  .header__logo {
+    font-size: 16px;
+  }
+  .nav .nav__item {
+    margin-right: 20px;
+  }
+  .nav .nav__link {
+    font-size: 16px;
+  }
+  .footer__link {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=result.css.map */

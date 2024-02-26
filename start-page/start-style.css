@@ -1,0 +1,179 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #ddddd5;
+  background: linear-gradient(140deg, #700000, #ce7433, #716fb8);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background: black;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 100px;
+}
+
+.header__logo {
+  background-image: url(../start-page/assets/svg/2901642.svg);
+  background-size: 80%;
+  background-position-y: 75%;
+  background-repeat: no-repeat;
+  height: 60px;
+  width: 90px;
+  font-size: 20px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: tb-rl;
+  color: white;
+}
+.header__logo .header__link {
+  color: white;
+  transition: all 0.4ms;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__list .nav__item {
+  list-style-type: none;
+  margin-right: 50px;
+}
+.nav__list .nav__link {
+  color: white;
+  font-size: 24px;
+  vertical-align: middle;
+}
+.nav__list .nav__link:hover {
+  color: rgb(60, 113, 144);
+}
+
+.present__container1,
+.present__container2,
+.present__container3 {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.present__wrapper1 {
+  background: linear-gradient(90deg, #1a3f69, #5076a1, #82a7d0, #5076a1, #1a3f69);
+}
+
+.present__wrapper2 {
+  background: linear-gradient(90deg, #7a4a00, #583300, #000000, #000000, #000000);
+}
+
+.present__wrapper1, .present__wrapper2, .present__wrapper3 {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.present__button {
+  background-color: rgb(60, 113, 144);
+  color: black;
+  border-radius: 50px;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  transition: all 0.4ms;
+}
+
+.present__button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.present__text {
+  margin-left: 20px;
+}
+
+.present__back {
+  width: 50%;
+}
+
+.present__title {
+  font-size: 48px;
+}
+
+.present__description {
+  font-size: 32px;
+}
+
+.logo-pos {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1600px;
+  justify-content: space-between;
+}
+
+.footer__link {
+  font-size: 24px;
+  color: black;
+}
+
+.course-logo {
+  width: 150px;
+  height: 50px;
+}
+
+@media screen and (max-width: 978px) {
+  .present__wrapper1, .present__wrapper2, .present__wrapper3 {
+    height: 400px;
+  }
+  .present__title {
+    font-size: 28px;
+  }
+  .present__description {
+    font-size: 20px;
+  }
+  .present__back1, .present__back2, .present__back3 {
+    width: 40%;
+  }
+  .present__pic1, .present__pic2, .present__pic3 {
+    width: 100%;
+  }
+  .present__button {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .present__wrapper1, .present__wrapper2, .present__wrapper3 {
+    height: none;
+  }
+  .present__text {
+    width: 50%;
+  }
+  .present__title {
+    font-size: 20px;
+  }
+  .present__description {
+    font-size: 16px;
+  }
+  .header__logo {
+    font-size: 16px;
+  }
+  .nav .nav__item {
+    margin-right: 10px;
+  }
+  .nav .nav__link {
+    font-size: 16px;
+  }
+  .footer__link {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=start-style.css.map */
